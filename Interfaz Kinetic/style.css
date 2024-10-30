@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+.container {
+    height: 100vh;
+    background-color: #c4c4c4;
+
+}
+
+nav {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 3px 5px 0 #44424274;
+
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 6px 20px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: all 0.3s ease;
+
+}
+
+ul li:hover {
+    background-color: #ff4221a2;
+    border-radius: 25px;
+    color: #ffff;
+
+}
+
+header {
+    position: relative;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.head {
+    width: 50%;
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+header h2 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.head p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.head button {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 160px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #ff4321;
+    border-radius: 25px;
+}
+
+button i {
+    font-size: 2rem;
+
+}
+
+.head button:hover {
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    transition: all 1s;
+
+}
+
+.imagenes .emp {
+    position: absolute;
+    height: 700px;
+    width: 550px;
+    bottom: 0;
+    left: 58%;
+    right: 20%;
+    z-index: 99;
+}
+
+.imagenes .fondo-emp {
+    position: absolute;
+    height: 900px;
+    width: 800px;
+    bottom: -15%;
+    left: 50%;
+    right: 20%;
+}
+
+@media screen and(max-with:900px) {
+    html {
+        font-size: .5rem;
+
+    }
+
+    .head {
+        margin-left: 20px;
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    nav {
+        padding: 20px 10px;
+
+    }
+}
+
+@media screen and(max-with:650px) {
+    header {
+        text-align: center;
+        align-items: normal;
+    }
+
+    .head {
+        padding-top: 80px;
+        margin-left: 0;
+        width: 100%;
+
+    }
+
+    .head button {
+        margin: auto;
+    }
+
+    .imagenes .emp {
+        height: 350px;
+        width: 90%;
+        right: 20%;
+        buttom: 0;
+    }
+
+    .imagenes .fondo-emp {
+        height: 300px;
+        width: 100%;
+        left: 0;
+    }
+
+    ul li {
+        font-size: .8rem;
+        padding: 6px 10px;
+    }
+}
